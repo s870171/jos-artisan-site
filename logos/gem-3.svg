@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <!-- Gem 3: Raw crystal cluster — three shards growing from base, TRUE single line -->
+  <path
+    d="M20,100
+       L20,72
+       L30,32
+       L40,72
+       L40,50
+       L50,10
+       L60,50
+       L60,72
+       L70,40
+       L80,65
+       L80,100
+       L60,100
+       L60,72
+       L50,100
+       L40,100
+       L40,72
+       L20,100
+       L80,100"
+    fill="none"
+    stroke="#1a1a1a"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

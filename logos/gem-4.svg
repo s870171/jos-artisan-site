@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <!-- Gem 4: Teardrop / pear cut gem — single continuous curved line with facets -->
+  <path
+    d="M50,10
+       C68,10 84,32 84,56
+       C84,78 68,98 50,110
+       C32,98 16,78 16,56
+       C16,32 32,10 50,10
+       L50,110
+       L84,56
+       L50,40
+       L16,56
+       L50,40
+       L50,10
+       L30,30
+       L50,40
+       L70,30
+       L50,10"
+    fill="none"
+    stroke="#1a1a1a"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

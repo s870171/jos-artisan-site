@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo's Artisan — One-Line Crystal Logos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: #1a1a1a;
+      background: #faf9f7;
+      padding: 4rem 2rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #8b7355;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Light row */
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      flex-wrap: wrap;
+    }
+    .gem-card {
+      text-align: center;
+      width: 140px;
+    }
+    .gem-frame {
+      width: 120px;
+      height: 140px;
+      margin: 0 auto 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gem-frame img {
+      width: 80px;
+      height: 96px;
+    }
+    .gem-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+    .gem-num {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8b7355;
+      margin-bottom: 0.4rem;
+    }
+    .gem-desc {
+      font-size: 0.68rem;
+      color: #6b6560;
+      line-height: 1.6;
+    }
+
+    /* Divider */
+    .divider {
+      text-align: center;
+      color: #d4cfc8;
+      margin: 3rem 0;
+      font-size: 0.6rem;
+      letter-spacing: 1em;
+    }
+
+    /* Dark row */
+    .dark-section {
+      background: #0c0a14;
+      margin: 0 -2rem;
+      padding: 3rem 2rem;
+    }
+    .dark-section .subtitle {
+      color: #c9a84c;
+      margin-bottom: 2rem;
+    }
+    .dark-row {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .dark-card {
+      text-align: center;
+      width: 120px;
+    }
+    .dark-frame {
+      width: 100px;
+      height: 120px;
+      margin: 0 auto 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dark-frame img {
+      width: 70px;
+      height: 84px;
+      filter: invert(92%) sepia(8%) saturate(300%) hue-rotate(220deg) brightness(105%);
+    }
+    .dark-card p {
+      font-size: 0.6rem;
+      color: #9a8fb5;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* With-text preview */
+    .lockup-section {
+      max-width: 700px;
+      margin: 3rem auto 0;
+    }
+    .lockup-section .subtitle { margin-bottom: 2rem; }
+    .lockup-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.5rem 2rem;
+      border: 1px solid #e8e4df;
+      background: #fff;
+    }
+    .lockup img {
+      width: 40px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+    .lockup-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .lockup-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+    .lockup-tag {
+      font-size: 0.55rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #8b7355;
+      margin-top: 0.2rem;
+    }
+
+    @media (max-width: 600px) {
+      .row, .dark-row { gap: 1.5rem; }
+      .gem-card { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>One-Line Crystal Marks</h1>
+  <p class="subtitle">Single continuous stroke &middot; No fills &middot; Tattoo-inspired</p>
+
+  <div class="row">
+    <div class="gem-card">
+      <div class="gem-frame"><img src="gem-1.svg" alt="Brilliant cut"></div>
+      <p class="gem-num">01</p>
+      <p class="gem-label">Brilliant Cut</p>
+      <p class="gem-desc">Classic diamond with crown facets and pavilion point</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="gem-2.svg" alt="Hexagonal crystal"></div>
+      <p class="gem-num">02</p>
+      <p class="gem-label">Hex Crystal</p>
+      <p class="gem-desc">Elongated hexagonal gem with crossed inner facets</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="gem-3.svg" alt="Crystal cluster"></div>
+      <p class="gem-num">03</p>
+      <p class="gem-label">Crystal Cluster</p>
+      <p class="gem-desc">Three raw shards growing from a shared base</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="gem-4.svg" alt="Pear drop"></div>
+      <p class="gem-num">04</p>
+      <p class="gem-label">Pear Drop</p>
+      <p class="gem-desc">Teardrop shape with curved outline and angular facets</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="gem-5.svg" alt="3D prism"></div>
+      <p class="gem-num">05</p>
+      <p class="gem-label">Crystal Prism</p>
+      <p class="gem-desc">3D hexagonal prism with inner depth perspective</p>
+    </div>
+  </div>
+
+  <div class="divider">&#9670; &#9670; &#9670;</div>
+
+  <!-- Dark background -->
+  <div class="dark-section">
+    <p class="subtitle">On dark</p>
+    <div class="dark-row">
+      <div class="dark-card">
+        <div class="dark-frame"><img src="gem-1.svg" alt="01"></div>
+        <p>01</p>
+      </div>
+      <div class="dark-card">
+        <div class="dark-frame"><img src="gem-2.svg" alt="02"></div>
+        <p>02</p>
+      </div>
+      <div class="dark-card">
+        <div class="dark-frame"><img src="gem-3.svg" alt="03"></div>
+        <p>03</p>
+      </div>
+      <div class="dark-card">
+        <div class="dark-frame"><img src="gem-4.svg" alt="04"></div>
+        <p>04</p>
+      </div>
+      <div class="dark-card">
+        <div class="dark-frame"><img src="gem-5.svg" alt="05"></div>
+        <p>05</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lockup previews -->
+  <div class="lockup-section">
+    <p class="subtitle" style="margin-top: 3rem;">Logo lockup preview</p>
+    <div class="lockup-row">
+      <div class="lockup">
+        <img src="gem-1.svg" alt="">
+        <div class="lockup-text">
+          <span class="lockup-name">Jo's Artisan</span>
+          <span class="lockup-tag">Crystal Bracelets</span>
+        </div>
+      </div>
+      <div class="lockup">
+        <img src="gem-3.svg" alt="">
+        <div class="lockup-text">
+          <span class="lockup-name">Jo's Artisan</span>
+          <span class="lockup-tag">Crystal Bracelets</span>
+        </div>
+      </div>
+      <div class="lockup">
+        <img src="gem-4.svg" alt="">
+        <div class="lockup-text">
+          <span class="lockup-name">Jo's Artisan</span>
+          <span class="lockup-tag">Crystal Bracelets</span>
+        </div>
+      </div>
+      <div class="lockup">
+        <img src="gem-5.svg" alt="">
+        <div class="lockup-text">
+          <span class="lockup-name">Jo's Artisan</span>
+          <span class="lockup-tag">Crystal Bracelets</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

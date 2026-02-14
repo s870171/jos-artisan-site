@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <!-- Gem 5: 3D crystal prism — hexagonal with depth, single continuous line -->
+  <path
+    d="M50,8
+       L80,24
+       L80,72
+       L50,92
+       L20,72
+       L20,24
+       L50,8
+       L50,18
+       L74,30
+       L74,67
+       L50,82
+       L26,67
+       L26,30
+       L50,18
+       L74,30
+       L80,24
+       L74,30
+       L80,72
+       L74,67
+       L50,92
+       L50,82
+       L26,67
+       L20,72
+       L26,67
+       L26,30
+       L20,24"
+    fill="none"
+    stroke="#1a1a1a"
+    stroke-width="1.05"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
