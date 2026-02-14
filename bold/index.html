@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo's Artisan — Crystal Bracelets Aligned to Your Destiny</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating stars decoration -->
+  <div class="stars" aria-hidden="true">
+    <div class="star star-1">&#10022;</div>
+    <div class="star star-2">&#10022;</div>
+    <div class="star star-3">&#10017;</div>
+    <div class="star star-4">&#10022;</div>
+    <div class="star star-5">&#10017;</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9788;</span>
+        Jo's Artisan
+      </a>
+      <ul class="nav-links">
+        <li><a href="#collection">Readings</a></li>
+        <li><a href="#connect" class="nav-cta">Seek Guidance</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-orb" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">&#9733; Crystal-Charged Bracelets &#9733;</p>
+      <h1>The Stars Know<br>Your Path</h1>
+      <p class="hero-sub">Every crystal holds a frequency. Every bracelet carries an intention. Align your energy with your destiny — wealth, love, or vitality awaits.</p>
+      <a href="#collection" class="btn">Reveal the Collection</a>
+    </div>
+    <div class="hero-sigil" aria-hidden="true">
+      <svg viewBox="0 0 200 200" width="200" height="200">
+        <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.2"/>
+        <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.15"/>
+        <circle cx="100" cy="100" r="50" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.1"/>
+        <polygon points="100,20 123,75 182,75 134,110 152,168 100,135 48,168 66,110 18,75 77,75" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.12"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider">
+    <span>&#10041;</span>
+  </div>
+
+  <!-- Featured Collection -->
+  <section id="collection" class="collection">
+    <div class="container">
+      <p class="section-label">&#9788; Divination Collection &#9788;</p>
+      <h2>Chosen by the Cosmos</h2>
+      <p class="section-sub">Each bracelet is charged with intention and assembled under auspicious energy. The stones chose you before you chose them.</p>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-glow product-glow-rose"></div>
+          <div class="product-image">
+            <img src="images/bracelet-1.png" alt="Rhodonite crystal bracelet with gold accents">
+          </div>
+          <div class="product-info">
+            <span class="product-symbol">&#9825;</span>
+            <h3>The Heart Bridge</h3>
+            <p>Rhodonite &middot; Gold Rhinestone Spacers</p>
+            <span class="product-intent">Unlocks love &amp; deep connection</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-glow product-glow-gold"></div>
+          <div class="product-image">
+            <img src="images/bracelet-2.png" alt="Yellow agate crystal bracelet with citrine charm">
+          </div>
+          <div class="product-info">
+            <span class="product-symbol">&#9830;</span>
+            <h3>The Abundance Ring</h3>
+            <p>Yellow Agate &middot; Citrine &middot; Moonstone</p>
+            <span class="product-intent">Channels wealth &amp; prosperity</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-glow product-glow-violet"></div>
+          <div class="product-image">
+            <img src="images/bracelet-3.png" alt="Amethyst crystal bracelet with butterfly charm">
+          </div>
+          <div class="product-info">
+            <span class="product-symbol">&#9670;</span>
+            <h3>The Butterfly Ascent</h3>
+            <p>Amethyst &middot; Clear Quartz &middot; Gold Butterfly</p>
+            <span class="product-intent">Awakens transformation &amp; clarity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider">
+    <span>&#9789;</span>
+  </div>
+
+  <!-- Custom / Connect -->
+  <section id="connect" class="connect">
+    <div class="container">
+      <div class="connect-inner">
+        <p class="section-label">&#10022; Personal Reading &#10022;</p>
+        <h2>What Does Your<br>Energy Need?</h2>
+        <p class="connect-desc">Share your intention and we will divine the perfect crystal combination for your journey. Every custom piece begins with understanding your path.</p>
+
+        <form class="connect-form" action="#" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+          </div>
+          <div class="form-row">
+            <select name="intention" required>
+              <option value="" disabled selected>What energy do you seek?</option>
+              <option value="wealth">Abundance &amp; Prosperity</option>
+              <option value="relationships">Love &amp; Connection</option>
+              <option value="health">Vitality &amp; Renewal</option>
+              <option value="combination">A full alignment</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="4" placeholder="Describe what the universe should know about your journey (optional)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-full">Begin Your Reading</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#9788;</span>
+          Jo's Artisan
+        </a>
+        <p class="footer-note">Handcrafted under celestial guidance. Each bracelet aligned to order.</p>
+        <div class="footer-links">
+          <a href="mailto:hello@josartisan.com">hello@josartisan.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jo's Artisan. All energies reserved. &#9733;</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
