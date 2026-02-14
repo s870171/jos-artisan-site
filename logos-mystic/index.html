@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo's Artisan — Mystic Crystal Logos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: #e8e0f0;
+      background: #0c0a14;
+      padding: 4rem 2rem;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+      color: #c9a84c;
+    }
+    .subtitle {
+      text-align: center;
+      color: #9a8fb5;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+    }
+    .section-title {
+      text-align: center;
+      color: #c9a84c;
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin: 3.5rem 0 2rem;
+    }
+
+    /* Main grid */
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      flex-wrap: wrap;
+    }
+    .gem-card {
+      text-align: center;
+      width: 150px;
+    }
+    .gem-frame {
+      width: 130px;
+      height: 150px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+    .gem-frame::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      filter: blur(40px);
+      opacity: 0.2;
+    }
+    .gem-card:nth-child(1) .gem-frame::before { background: #c9a84c; }
+    .gem-card:nth-child(2) .gem-frame::before { background: #7b5ea7; }
+    .gem-card:nth-child(3) .gem-frame::before { background: #c4547a; }
+    .gem-card:nth-child(4) .gem-frame::before { background: #c9a84c; }
+    .gem-card:nth-child(5) .gem-frame::before { background: #9163d1; }
+    .gem-frame img {
+      width: 75px;
+      height: 90px;
+      position: relative;
+      z-index: 1;
+      filter: invert(92%) sepia(8%) saturate(500%) hue-rotate(210deg) brightness(110%);
+    }
+    .gem-num {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 0.3rem;
+    }
+    .gem-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      color: #e8e0f0;
+    }
+    .gem-desc {
+      font-size: 0.65rem;
+      color: #9a8fb5;
+      line-height: 1.7;
+    }
+
+    /* Divider */
+    .divider {
+      text-align: center;
+      color: #c9a84c;
+      margin: 3rem 0;
+      font-size: 0.7rem;
+      letter-spacing: 0.6em;
+      opacity: 0.4;
+    }
+
+    /* Light bg preview */
+    .light-section {
+      background: #faf9f7;
+      margin: 3rem -2rem 0;
+      padding: 3rem 2rem;
+    }
+    .light-section .section-title { color: #8b7355; }
+    .light-row {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .light-card {
+      text-align: center;
+      width: 110px;
+    }
+    .light-frame {
+      width: 90px;
+      height: 108px;
+      margin: 0 auto 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .light-frame img {
+      width: 65px;
+      height: 78px;
+    }
+    .light-card p {
+      font-size: 0.55rem;
+      color: #6b6560;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* Lockup */
+    .lockup-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.2rem 1.8rem;
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 2px;
+    }
+    .lockup img {
+      width: 36px;
+      height: 43px;
+      flex-shrink: 0;
+      filter: invert(92%) sepia(8%) saturate(500%) hue-rotate(210deg) brightness(110%);
+    }
+    .lockup-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .lockup-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      color: #c9a84c;
+    }
+    .lockup-tag {
+      font-size: 0.5rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #9a8fb5;
+      margin-top: 0.2rem;
+    }
+
+    @media (max-width: 600px) {
+      .row, .light-row { gap: 1.5rem; }
+      .gem-card { width: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mystic Crystal Marks</h1>
+  <p class="subtitle">Bold one-line designs &middot; Fortune-telling &middot; Psychic energy</p>
+
+  <div class="row">
+    <div class="gem-card">
+      <div class="gem-frame"><img src="mystic-1.svg" alt="Crystal Eye"></div>
+      <p class="gem-num">01</p>
+      <p class="gem-label">Crystal Eye</p>
+      <p class="gem-desc">All-seeing eye with a faceted gem as the iris. Vision and intuition.</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="mystic-2.svg" alt="Moon Crystal"></div>
+      <p class="gem-num">02</p>
+      <p class="gem-label">Moon Crystal</p>
+      <p class="gem-desc">Faceted crystal emerging from a crescent moon. Lunar energy and divination.</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="mystic-3.svg" alt="Oracle Hand"></div>
+      <p class="gem-num">03</p>
+      <p class="gem-label">Oracle Hand</p>
+      <p class="gem-desc">Fortune teller's open palm cradling a crystal. Touch and channeling.</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="mystic-4.svg" alt="Alchemy Gem"></div>
+      <p class="gem-num">04</p>
+      <p class="gem-label">Alchemy Gem</p>
+      <p class="gem-desc">Faceted crystal inside a triangle. Alchemy, transformation, power.</p>
+    </div>
+    <div class="gem-card">
+      <div class="gem-frame"><img src="mystic-5.svg" alt="Star Pendulum"></div>
+      <p class="gem-num">05</p>
+      <p class="gem-label">Star Pendulum</p>
+      <p class="gem-desc">Crystal pendulum hanging from a five-pointed star. Divination tool.</p>
+    </div>
+  </div>
+
+  <div class="divider">&#10022; &#9789; &#10022;</div>
+
+  <!-- Lockup previews on dark -->
+  <p class="section-title">Logo lockup — dark</p>
+  <div class="lockup-row">
+    <div class="lockup">
+      <img src="mystic-1.svg" alt="">
+      <div class="lockup-text">
+        <span class="lockup-name">Jo's Artisan</span>
+        <span class="lockup-tag">Crystal Bracelets</span>
+      </div>
+    </div>
+    <div class="lockup">
+      <img src="mystic-2.svg" alt="">
+      <div class="lockup-text">
+        <span class="lockup-name">Jo's Artisan</span>
+        <span class="lockup-tag">Crystal Bracelets</span>
+      </div>
+    </div>
+    <div class="lockup">
+      <img src="mystic-4.svg" alt="">
+      <div class="lockup-text">
+        <span class="lockup-name">Jo's Artisan</span>
+        <span class="lockup-tag">Crystal Bracelets</span>
+      </div>
+    </div>
+    <div class="lockup">
+      <img src="mystic-5.svg" alt="">
+      <div class="lockup-text">
+        <span class="lockup-name">Jo's Artisan</span>
+        <span class="lockup-tag">Crystal Bracelets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Light background -->
+  <div class="light-section">
+    <p class="section-title">On light background</p>
+    <div class="light-row">
+      <div class="light-card">
+        <div class="light-frame"><img src="mystic-1.svg" alt="01"></div>
+        <p>Crystal Eye</p>
+      </div>
+      <div class="light-card">
+        <div class="light-frame"><img src="mystic-2.svg" alt="02"></div>
+        <p>Moon Crystal</p>
+      </div>
+      <div class="light-card">
+        <div class="light-frame"><img src="mystic-3.svg" alt="03"></div>
+        <p>Oracle Hand</p>
+      </div>
+      <div class="light-card">
+        <div class="light-frame"><img src="mystic-4.svg" alt="04"></div>
+        <p>Alchemy Gem</p>
+      </div>
+      <div class="light-card">
+        <div class="light-frame"><img src="mystic-5.svg" alt="05"></div>
+        <p>Star Pendulum</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
